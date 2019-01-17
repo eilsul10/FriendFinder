@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Input Name and Link of Photo -->
+
+    <!-- Use form? -->
+
+    <form>
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+      </div>
+      <label for="basic-url">Image Link</label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="image"></span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+      <!-- Questions -->
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Question 1: You often get so lost in thoughts that you ignore or forget
+          your surroundings.</label>
+        <select class="form-control" id="questionOne">
+          <option>1 (strongly disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (strongly agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Question 2: You do not usually initiate conversations.</label>
+        <select class="form-control" id="questionTwo">
+          <option>1 (strongly disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (strongly agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Question 3: You are usually highly motivated and energetic.</label>
+        <select class="form-control" id="questionThree">
+          <option>1 (strongly disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (strongly agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Question 4: Winning a debate matters less to you than making sure no one
+          gets upset.</label>
+        <select class="form-control" id="questionFour">
+          <option>1 (strongly disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (strongly agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Question 5: You consider yourself more practical than creative.</label>
+        <select class="form-control" id="questionFive">
+          <option>1 (strongly disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (strongly agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Question 6: People can rarely upset you.</label>
+        <select class="form-control" id="questionSix">
+          <option>1 (strongly disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (strongly agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Question 7: Your mood can change very quickly.</label>
+        <select class="form-control" id="questionSeven">
+          <option>1 (strongly disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (strongly agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Question 8: Your work style is closer to random energy spikes than to a
+          methodical and organized approach.</label>
+        <select class="form-control" id="questionEight">
+          <option>1 (strongly disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (strongly agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Question 9: You are often envious of others.</label>
+        <select class="form-control" id="questionNine">
+          <option>1 (strongly disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (strongly agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Question 10: Being able to develop a plan and stick to it is the most
+          important part of every project.</label>
+        <select class="form-control" id="questionTen">
+          <option>1 (strongly disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (strongly agree)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary submit">Submit</button>
+    </form>
+
+    <!-- Error alert if not all fields are completed -->
+
+    <!-- Modal Pop Up with result -->
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to Friends List -->
+
+    <!-- Link to Github Repo -->
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>
+        <a href="/api/friendslist">API Table Link</a>
+        |
+        <a href="/">API Wait List</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+  $(".submit").on("click", function (event) {
+    event.preventDefault();
+
+    // **FIX CODE**
+
+    // var newUser = {
+    //   soulmates.name: $("#name").val().trim(),
+    //   soulmates.photo: $("#image").val().trim(),
+    //   soulmates.scores: $("#basic-url").val.trim()
+    // };
+
+    console.log(newUser);
+
+    $.post("/api/friends", newUser,
+      function (data) {
+        if (data) {
+          
+          $("#resultModal").modal("toggle");
+        }
+
+        // Clear the form when submitting
+        $("#name").val("");
+        $("#image").val("");
+        $("#basic-url").val("");
+
+      });
+
+  });
+
+</script>
