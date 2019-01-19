@@ -20,7 +20,7 @@ function getMostCompatibleFriend(newUser) {
     }
 
     storeTotaldifference.sort(function(a, b){
-      return a.totalDifference < b.totalDifference ? -1 : 1
+      return a.totalDifference - b.totalDifference
     })
 
     var closestMatch = storeTotaldifference[0]
@@ -38,36 +38,11 @@ module.exports = function (app) {
 // API POST Request
 app.post("/api/friends", function (req, res) {
     var usersData = req.body;
-    // friendsList.push(req.body);
-    res.json(getMostCompatibleFriend(usersData));
-    // res.json(friendsList[friendsList.length - 1]);
+    var mostCompatibleFriend = getMostCompatibleFriend(usersData);
+    friendsList.push(usersData);
+    res.json(mostCompatibleFriend);
 });
 
 };
 
-// var arraySort = require('array-sort');
-
-// app.post("/api/friends", function (req, res) {
-
-//     //current user input
-//     var userCurrentdata = req.body;
-//     var storeTotaldifference = [];
-//     var results = 0;
-//     for (var i = 0; i < soulmates.length; i++) {
-
-//         for (var j = 0; j < soulmates[i].scores.length; j++) {
-//             results += parseInt(userCurrentdata.scores[j]) - parseInt(soulmates[i].scores[j]);
-//         }
-
-//         storeTotaldifference.push({ name: soulmates[i].name, urlImage: soulmates[i].urlImage, totalDifference: Math.abs(results) });
-
-//         arraySort(storeTotaldifference, 'totalDifference');
-
-//         soulmates.push(userCurrentdata);
-
-//         return res.json(storeTotaldifference[0]);
-
-//     }
-
-// });
 

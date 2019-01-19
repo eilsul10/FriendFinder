@@ -168,9 +168,7 @@
   <footer>
     <div class="container">
       <p>
-        <a href="/api/friendslist">API Table Link</a>
-        |
-        <a href="/">API Wait List</a>
+        <a href="/api/friends">API Link</a>
       </p>
     </div>
   </footer>
@@ -195,16 +193,16 @@
       name: $("#name").val().trim(),
       photo: $("#basic-url").val().trim(),
       scores: [
-        +$("#questionOne").val().trim(),
-        +$("#questionTwo").val().trim(),
-        +$("#questionThree").val().trim(),
-        +$("#questionFour").val().trim(),
-        +$("#questionFive").val().trim(),
-        +$("#questionSix").val().trim(),
-        +$("#questionSeven").val().trim(),
-        +$("#questionEight").val().trim(),
-        +$("#questionNine").val().trim(),
-        +$("#questionTen").val().trim()
+        parseInt($("#questionOne").val().trim()),
+        parseInt($("#questionTwo").val().trim()),
+        parseInt($("#questionThree").val().trim()),
+        parseInt($("#questionFour").val().trim()),
+        parseInt($("#questionFive").val().trim()),
+        parseInt($("#questionSix").val().trim()),
+        parseInt($("#questionSeven").val().trim()),
+        parseInt($("#questionEight").val().trim()),
+        parseInt($("#questionNine").val().trim()),
+        parseInt($("#questionTen").val().trim())
       ]
     };
 
