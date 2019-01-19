@@ -1,8 +1,3 @@
-// A GET Route to /survey which should display the survey page.
-// A default, catch-all route that leads to home.html which displays the home page.
-
-// ** Double check if /public is needed
-
 var path = require("path");
 
 // Routing
